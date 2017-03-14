@@ -1,7 +1,8 @@
 import { Routes, RouterModule }  from '@angular/router';
 
 import { Permissions } from './permissions.component';
-import { Users } from './components/users/users.component';
+import {UserInput} from "./components/user-input/user-input.component";
+import {UserList} from "./components/user-list/user-list.component";
 
 // noinspection TypeScriptValidateTypes
 const routes: Routes = [
@@ -9,7 +10,8 @@ const routes: Routes = [
     path: '',
     component: Permissions,
     children: [
-      { path: 'users', component: Users }
+      { path: 'user-input', component: UserInput },
+      { path: 'user-list', component: UserList }
     ]
   }
 ];

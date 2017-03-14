@@ -338,10 +338,18 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'users',
+            path: 'user-input',
             data: {
               menu: {
-                title: 'Users',
+                title: 'Add User',
+              }
+            }
+          },
+          {
+            path: 'user-list',
+            data: {
+              menu: {
+                title: 'Users List',
               }
             }
           }
