@@ -44,6 +44,10 @@ if ('production' === ENV || 'renderer' === ENV) {
 
 export const decorateModuleRef = _decorateModuleRef;
 
+export const GLOBAL_CONFIGURATION = {
+  'API_URL' : 'localhost:3001'
+} ;
+
 export const ENV_PROVIDERS = [
   ...PROVIDERS
 ];
